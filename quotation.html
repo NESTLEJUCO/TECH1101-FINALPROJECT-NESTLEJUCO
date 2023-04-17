@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js" defer></script>
+    <title>GreenThumb Landscaping</title>
+  </head>
+  <body>
+    <!--Quick Links-->
+    <div class="quicklinks">
+      <div>
+        <ul class="qlinkitems">
+          <li>
+            <i
+              class="fa fa-envelope"
+              style="font-size: 20px; color: #89c07e"
+            ></i
+            >&nbsp;<a
+              href="mailto:info@greenthumblanscaping.com"
+              title="E-mail Us"
+              >info@greenthumblanscaping.com</a
+            >
+          </li>
+          <li>
+            <i class="fa fa-phone" style="font-size: 20px; color: #89c07e"></i
+            >&nbsp;<a href="tel:+17803020635" title="Call Us">780.302.0635</a>
+          </li>
+          <li>
+            <i
+              class="fa fa-calendar"
+              style="font-size: 20px; color: #89c07e"
+            ></i
+            >&nbsp;Mon - Sat 9:00am - 5:00pm
+          </li>
+        </ul>
+      </div>
+      <div>&nbsp;</div>
+      <div class="qlinkitems">
+        <li>
+          <a href="#" title="facebook"
+            ><i
+              class="fa fa-facebook"
+              style="font-size: 20px; color: #89c07e"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" title="linkedin"
+            ><i
+              class="fa fa-linkedin"
+              style="font-size: 20px; color: #89c07e"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" title="twitter"
+            ><i
+              class="fa fa-twitter"
+              style="font-size: 20px; color: #89c07e"
+            ></i
+          ></a>
+        </li>
+      </div>
+    </div>
+    <!--Header-->
+    <header>
+      <div class="logo"><h1 id="h1custom">GreenThumb Landscaping</h1></div>
+      <div>&nbsp;</div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html" title="Back to Home">HOME</a></li>
+        <li><a href="aboutus.html" title="About Us">ABOUT US</a></li>
+        <li><a href="services.html" title="Services Offered">SERVICES</a></li>
+        <li>
+          <a href="testimonial.html" title="Client Testimonials">TESTIMONIAL</a>
+        </li>
+        <li><a href="contactus.html" title="Contact Us">CONTACT US</a></li>
+        <li>
+          <button class="button button1">
+            <a
+              href="quotation.html"
+              title="Get Quick Quotation"
+              style="color: #f0cd6e"
+              >ONLINE QUOTE</a
+            >
+          </button>
+        </li>
+      </ul>
+    </header>
+
+    <!--Banner Image-->
+    <div class="banner">
+      <img src="images/banner3.png" alt="Photo Banner 3" width="100%" />
+    </div>
+
+    <!--Main Content-->
+    <main>
+      <article>
+        <h2 id="h3custom">ONLINE QUOTATION</h2>
+        <hr />
+        <p style="text-align: left; font-weight: bold">Doing the Job Right</p>
+        <p class="pmedium">
+          Have a landscaping idea but not sure where to start? You can get a
+          decent idea of cost from our calculator, just plug in your needs and
+          generate a base price / estimate.
+        </p>
+        <hr />
+        <h2 id="h3custom">RESIDENTIAL SERVICES PRICES</h2>
+        <p class="pmedium">
+          Based off an average yard size of 10000 Square Feet, choose what you
+          need done weekly, monthly or just one time!
+        </p>
+      </article>
+    </main>
+    <div class="tableformat">
+      <table id="online-estimate">
+        <tr>
+          <th id="services-header">SERVICES OFFERED</th>
+          <th>LABOR COST</th>
+          <th>TIME/SIZE/QTY</th>
+          <th id="subtotal-header">SUBTOTAL</th>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">
+            Landscape Maintenance (pruning / weed removal)
+          </td>
+          <td class="price-description" data-amount="10">$10/Hr</td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 hours"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Treatment & fertilization</td>
+          <td class="price-description" data-amount="0.003">
+            $0.003/Square Foot
+          </td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 sqft"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Lawn Thatching / clean up</td>
+          <td class="price-description" data-amount="0.004">
+            $0.004/Square Foot
+          </td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 sqft"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Grass cutting</td>
+          <td class="price-description" data-amount="0.004">
+            $0.004/Square Foot
+          </td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 sqft"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Mulching</td>
+          <td class="price-description" data-amount="0.001">
+            $0.001/Square Foot
+          </td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 sqft"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Seeding</td>
+          <td class="price-description" data-amount="0.007">
+            $0.007/Square Foot
+          </td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 sqft"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Aeration</td>
+          <td class="price-description" data-amount="0.003">
+            $0.003/Square Foot
+          </td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 sqft"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Tree-health inspections</td>
+          <td class="price-description" data-amount="5">$5/Tree</td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 trees"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Tree trimming</td>
+          <td class="price-description" data-amount="40">$40/Tree</td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 trees"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Shrub pruning</td>
+          <td class="price-description" data-amount="10">$10/Hr</td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 hours"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Weed management</td>
+          <td class="price-description" data-amount="10">$10/Hr</td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 hours"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="service-name">Tree removal</td>
+          <td class="price-description" data-amount="40">$40/Hr</td>
+          <td>
+            <input
+              type="number"
+              class="user-input-quantity"
+              min="0"
+              max="999999"
+              placeholder="0 hours"
+              value="0"
+            />
+          </td>
+          <td class="subtotal">$0.00</td>
+        </tr>
+        <tr>
+          <th colspan="3" style="text-align: right">TOTAL ESTIMATE</th>
+          <td id="total"></td>
+        </tr>
+      </table>
+    </div>
+    <main>
+      <article>
+        <hr />
+        <p class="pmedium" style="text-align: center">
+          Prices may vary without prior notification. Please contact us for
+          final quotation. Thank you!
+        </p>
+      </article>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <p class="pfooter">© 2023 All Rights Reserved. GreenThumb Landscaping.</p>
+    </footer>
+  </body>
+</html>
