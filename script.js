@@ -1,10 +1,8 @@
-let itemQuantitiesArray = document.getElementsByClassName(
-  "user-input-quantity"
-);
+let itemsArray = document.getElementsByClassName("user-input-quantity");
 let priceArray = document.querySelectorAll(".subtotal");
 let totalPrice = 0;
 
-Array.prototype.forEach.call(itemQuantitiesArray, update);
+Array.prototype.forEach.call(itemsArray, update);
 
 function update(val, i) {
   val.addEventListener("input", function () {

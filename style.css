@@ -7,30 +7,30 @@ body {
 
 /*Navigation Links*/
 a:link {
-  color: #467750;
+  color: #89c07e;
   text-decoration: none;
 }
 
 a:visited {
-  color: #467750;
+  color: #89c07e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #89c07e;
+  color: #f0cd6e;
   text-decoration: dotted;
   transition-duration: 0.4s;
 }
 
 a:active {
-  color: #467750;
+  color: #89c07e;
   text-decoration: none;
 }
 
 /*Quick Links*/
 .quicklinks {
   background-color: #212121;
-  color: #467750;
+  color: #89c07e;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 20px;
@@ -54,6 +54,30 @@ a:active {
   overflow: auto;
 }
 
+.fa-facebook {
+  color: #89c07e;
+}
+
+.fa-facebook:hover {
+  color: #f0cd6e;
+}
+
+.fa-linkedin {
+  color: #89c07e;
+}
+
+.fa-linkedin:hover {
+  color: #f0cd6e;
+}
+
+.fa-twitter {
+  color: #89c07e;
+}
+
+.fa-twitter:hover {
+  color: #f0cd6e;
+}
+
 /*Header*/
 header {
   background-color: #ececec;
@@ -73,7 +97,7 @@ header {
   background-color: #89c07e;
   border-radius: 8px;
   color: #467750;
-  padding: 5px 10px 5px 10px;
+  padding: 3px 10px 3px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -408,7 +432,7 @@ footer {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 165px;
+    margin-top: 169px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -426,7 +450,7 @@ footer {
 
   #menu-toggle:checked ~ .menu li {
     border: 1px solid #333333;
-    height: 2.5em;
+    height: 2.1em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
