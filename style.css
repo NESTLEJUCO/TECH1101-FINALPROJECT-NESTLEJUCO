@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-/*Page Links*/
+/*Navigation Links*/
 a:link {
   color: #467750;
   text-decoration: none;
@@ -51,7 +51,7 @@ a:active {
 
 .qlinkitems > li {
   margin: 0 1rem;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /*Header*/
@@ -212,11 +212,15 @@ p {
 .tableformat {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 table {
-  width: 90%;
+  width: 80%;
   border-spacing: 5px;
   color: #333333;
 }
@@ -250,7 +254,17 @@ footer {
 }
 
 /*Responsive layout*/
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  .qlinkitems {
+    font-size: small;
+  }
+
+  a {
+    font-size: small;
+  }
+}
+
+@media (max-width: 900px) {
   main {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -266,7 +280,6 @@ footer {
     justify-content: center;
     align-items: start;
     font-size: small;
-    /* line-height: 24px; */
   }
 
   .qlinkitems > li {
@@ -276,9 +289,22 @@ footer {
   }
 
   #h1custom {
-    font-size: large;
-    padding-left: 10px;
-    color: #467750;
+    font-size: medium;
+    padding-left: 0px;
+  }
+
+  #h2custom {
+    font-size: medium;
+    padding-left: 0px;
+  }
+
+  #h3custom {
+    font-size: medium;
+    padding-left: 0px;
+  }
+
+  .pmedium {
+    font-size: small;
   }
 
   .imgcustom {
@@ -287,6 +313,20 @@ footer {
     height: 220px;
     position: relative;
     overflow: hidden;
+  }
+
+  .tableformat {
+    font-size: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th {
+    font-size: 12px;
   }
 }
 
@@ -357,7 +397,7 @@ footer {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .menu-button-container {
     display: flex;
     order: 5;
@@ -368,7 +408,7 @@ footer {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 170px;
+    margin-top: 165px;
     left: 0;
     flex-direction: column;
     width: 100%;
